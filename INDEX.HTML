@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Button || Web Addicted </title>
+    <link rel="STYLESHEET" href="style.css">
+</head>
+<body>
+    <button>
+        <span>FELIX</span>
+      </button>
+      <button>
+        <span>IT</span>
+      </button>
+      <button>
+        <span>SYSTEMS</span>
+      </button>
+      <button>
+        <span>AHMEDABAD</span>
+      </button>
+      <script>
+        const syncPointer = ({ x: pointerX, y: pointerY }) => {
+  const x = pointerX.toFixed(2);
+  const y = pointerY.toFixed(2);
+  const xp = (pointerX / window.innerWidth).toFixed(2);
+  const yp = (pointerY / window.innerHeight).toFixed(2);
+  document.documentElement.style.setProperty('--x', x);
+  document.documentElement.style.setProperty('--xp', xp);
+  document.documentElement.style.setProperty('--y', y);
+  document.documentElement.style.setProperty('--yp', yp);
+};
+document.body.addEventListener('pointermove', syncPointer);
+      </script>
+
+
+</body>
+    
+</body>
+</html>
